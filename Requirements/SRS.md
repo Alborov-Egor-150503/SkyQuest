@@ -78,7 +78,7 @@ Web-сайт «SkyQuest» позволит зарегистрированным 
 <a name="user_interface"/>
 
 ## 2.2 Интерфейс пользователя
-Окно входа в приложение.  
+[Окно входа в приложение.](https://github.com/Alborov-Egor-150503/SkyQuest/blob/main/Mockups/SignIn.png)  
 
 Окно регистрации нового пользователя.  
 
