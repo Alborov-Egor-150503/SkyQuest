@@ -80,8 +80,11 @@ Web-сайт «SkyQuest» позволит зарегистрированным 
 ## 2.2 Интерфейс пользователя
 [Окно входа в приложение.](https://github.com/Alborov-Egor-150503/SkyQuest/blob/main/Mockups/SignIn.png)  
 
-Окно регистрации нового пользователя.  
+[Окно регистрации нового пользователя.] (https://github.com/Alborov-Egor-150503/SkyQuest/blob/main/Mockups/SignUp.png)
 
+[Главная страница.](https://github.com/Alborov-Egor-150503/SkyQuest/blob/main/Mockups/MainPage.png)
+
+[Профиль пользователя.](https://github.com/Alborov-Egor-150503/SkyQuest/blob/main/Mockups/Profile.png)
 
 <a name="user_specifications"/>
 
