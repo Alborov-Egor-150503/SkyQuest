@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:       Нажать на блок с
+ информацией о полете;
+:Нажать на кнопку "Delete Flight";
+:Удаление полета из списка;
+stop
+
+@enduml

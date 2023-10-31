@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/component-diagram
+
+package "VIEW" {
+   [MainWindow]-[dotted]-> [RestorePasswordWindow]
+   [MainWindow]-[dotted]-> [LoginWindow]
+   [MainWindow]-[dotted]-> [RegistrationWindow]
+   [RegistrationWindow] -[dotted]-> [LoginWindow]
+   [RestorePasswordWindow] -[dotted]-> [LoginWindow]
+   [RegistrationWindow] -[dotted]-> [OkForm]
+   [ProfileWindow] -[dotted]-> [ShowItemWindow]
+   [LoginWindow] -[dotted]->[ProfileWindow]
+   [ProfileWindow] -[dotted]-> [OrderWindow]
+}
+
+package "Controller" {
+  [Program]
+}
+
+
+database "PostgreSQL" {
+[Users] -[dotted]-> [Orders]
+[Flight] -[dotted]-> [Seats]
+[Flight] -[dotted]-> [Time]
+[Flight] -[dotted]-> [Takeoff]
+[Flight] -[dotted]-> [Takeon]
+}
+
+
+[VIEW]-[dotted]-> [Controller]:HTTP
+[Controller] -[dotted]-> [VIEW]:HTTP
+[Controller] -[dotted]-> [PostgreSQL]
+[PostgreSQL] -[dotted]->[Controller]
+@enduml

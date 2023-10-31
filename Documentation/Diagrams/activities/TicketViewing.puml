@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Выбрать билета;
+:Открытие страницы выбранного билета;
+:Просмотр информации о полете;
+stop
+@enduml

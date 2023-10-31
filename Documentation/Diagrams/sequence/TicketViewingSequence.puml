@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam sequence{
+ParticipantPadding 30
+MessageAlign center
+}
+
+Actor Администатор as Admin
+participant "Главное окно" as mainWindow
+participant "Окно просмотра билета" as itemWindow
+
+Admin -> mainWindow: 1: Выбор билета из списка
+mainWindow -> itemWindow: 1.1: Открытие окна
+itemWindow -> Admin: 2: Отображение окна
+
+group info
+itemWindow -> Admin: 3: Отображение времени
+itemWindow -> Admin: 4. Отображение места взлета
+itemWindow -> Admin: 5. Отображение места посадки
+Admin -> itemWindow: 6. Нажатие кнопки "Cancel"
+itemWindow -> mainWindow: 6.1 Закрытие окна просмотра
+end
+
+@enduml

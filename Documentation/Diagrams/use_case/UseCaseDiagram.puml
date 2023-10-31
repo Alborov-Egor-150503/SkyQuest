@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Администратор: as Admin
+:Пользователь: as User
+(Авторизация в приложении) as (Authorization)
+(Настройка профиля) as (Profile)
+(Смена логина и пароля) as (InformationChanging)
+(Покупка билета) as (BuyTicket)
+(Выбор билета) as (AddItem)
+(Отмена выбранных билетов) as (DeleteItem)
+(Просмотр купленных билетов) as (ItemsWatching)
+
+
+User --> (Authorization)
+Admin ---> (Authorization)
+
+User --> (Profile)
+Admin ---> (Profile)
+
+User --> (BuyTicket)
+
+User ---> (AddItem)
+Admin ---> (AddItem)
+
+User ---> (DeleteItem)
+Admin ---> (DeleteItem)
+
+Admin ---> (ItemsWatching)
+User --> (ItemsWatching)
+
+
+(Profile) -[dotted]-> (InformationChanging):imports
+
+@enduml
