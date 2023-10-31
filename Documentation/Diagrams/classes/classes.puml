@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract Person
+
+Person <|-- Admin
+Person <|-- User
+class Search
+Flight <|-- Ticket
+@enduml
