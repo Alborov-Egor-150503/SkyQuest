@@ -4,7 +4,7 @@ SkyQuest - это web-сайт, предназначенный для поиск
 
 WebBrowsers: Chrome.
 
-Language: Java.  
+Language: Python.  
 Interface language: HTML, CSS.
 
 [SRS of program](https://github.com) 
